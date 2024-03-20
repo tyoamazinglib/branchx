@@ -6,7 +6,7 @@ with open('models/dt.pkl','rb') as file:
     dt = pickle.load(file)
 
 html_temp = """
-    <div style="background-color:#008000;padding:20px;border-radius:10px;box-shadow: 5px 10px 18px #0000FF;">
+    <div style="background-color:#0000FF;padding:20px;border-radius:10px;box-shadow: 5px 10px 18px #0000FF;">
         <h1 style="color:white;text-align:center;font-size:2.5em;">Aplikasi Klasifikasi Kredit Nasabah</h1>
     </div>
 """
@@ -36,6 +36,16 @@ desc_temp2 = """
 def main():
     stc.html(html_temp)
     st.sidebar.image("logo/BranchX.png")
+     st.markdown(
+        """
+        <style>
+            .sidebar .sidebar-content {
+                background-color: #0000FF;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
     menu = ["Home", "Aplikasi"]
     choice = st.sidebar.selectbox("Menu", menu)
