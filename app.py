@@ -18,9 +18,9 @@ desc_temp = """
     pekerjaan nasabah.
     ### Branch X KCP Jakarta Mangga 2
     #### Penjelasan produk kredit:
-    - KSM []
-    - Kartu Kredit []
-    - KPR []
+    - [Kredit Serbaguna Mandiri](https://www.bankmandiri.co.id/ksm)
+    - [Kartu Kredit](https://www.mandirikartukredit.com/)
+    - [Kredit Kepemilikan Rumah](https://www.bankmandiri.co.id/kpr)
     #### Dibuat oleh
     - Nugroho Budi Prasetyo
     - M. Noufal Rifqi I.
