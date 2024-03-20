@@ -34,19 +34,19 @@ desc_temp2 = """
 """
 
 def main():
+    st.markdown(
+    """
+<style>
+.sidebar .sidebar-content {
+    background-image: linear-gradient(#2e7bcf,#2e7bcf);
+    color: blue;
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
     stc.html(html_temp)
     st.sidebar.image("logo/BranchX.png")
-    st.markdown(
-        """
-        <style>
-            .sidebar .sidebar-content {
-                background-color: #0000FF;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
     menu = ["Home", "Aplikasi"]
     choice = st.sidebar.selectbox("Menu", menu)
 
