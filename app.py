@@ -38,7 +38,7 @@ def main():
     """
 <style>
 .sidebar .sidebar-content {
-    background-color: blue;
+    background-color: #0000FF;
 }
 </style>
 """,
