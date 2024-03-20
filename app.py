@@ -34,18 +34,9 @@ desc_temp2 = """
 """
 
 def main():
-    st.markdown(
-    """
-<style>
-.sidebar .sidebar-content {
-    background-color: #0000FF;
-}
-</style>
-""",
-    unsafe_allow_html=True,
-)
+
     stc.html(html_temp)
-    st.sidebar.image("logo/BranchX.png")
+    st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/2560px-Bank_Mandiri_logo_2016.svg.png")
     menu = ["Home", "Aplikasi"]
     choice = st.sidebar.selectbox("Menu", menu)
 
