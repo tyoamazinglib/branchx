@@ -36,7 +36,7 @@ desc_temp2 = """
 def main():
     stc.html(html_temp)
     st.sidebar.image("logo/BranchX.png")
-     st.markdown(
+    st.markdown(
         """
         <style>
             .sidebar .sidebar-content {
