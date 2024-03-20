@@ -6,7 +6,7 @@ with open('models/dt.pkl','rb') as file:
     dt = pickle.load(file)
 
 html_temp = """
-    <div style="background-color:#008000;padding:20px;border-radius:10px;box-shadow: 5px 10px 18px #888888;">
+    <div style="background-color:#008000;padding:20px;border-radius:10px;box-shadow: 5px 10px 18px #0000FF;">
         <h1 style="color:white;text-align:center;font-size:2.5em;">Aplikasi Klasifikasi Kredit Nasabah</h1>
     </div>
 """
@@ -17,17 +17,20 @@ desc_temp = """
     Aplikasi ini bertujuan untuk mencegah nasabah kredit macet dan menyesuaikan produk kredit sesuai dengan limit kredit serta 
     pekerjaan nasabah.
     ### Branch X KCP Jakarta Mangga 2
-    #### Kolom kelas diisi dengan angka dan pengertiannya sebagai berikut:
-    - Angka 1 untuk nasabah yang bekerja di perusahaan PT (Perseroan Terbatas) dan PNS/Bekerja dengan perusahaan pemerintah
-    - Angka 2 untuk pemilik toko/usaha
-    - Angka 3 untuk nasabah yang bekerja di angka 1 (PT/PNS/Perusahaan Pemerintah)
-    #### Dibuat oleh
-    - Nugroho Budi Prasetyo
-    - M. Noufal Rifqi I.
     #### Penjelasan produk kredit:
     - KSM []
     - Kartu Kredit []
     - KPR []
+    #### Dibuat oleh
+    - Nugroho Budi Prasetyo
+    - M. Noufal Rifqi I.
+"""
+
+desc_temp2 = """
+    #### Kolom kelas diisi dengan angka dan pengertiannya sebagai berikut:
+    - Angka 1 untuk nasabah yang bekerja di perusahaan PT (Perseroan Terbatas) dan PNS/Bekerja dengan perusahaan pemerintah
+    - Angka 2 untuk pemilik toko/usaha
+    - Angka 3 untuk nasabah yang bekerja di angka 1 (PT/PNS/Perusahaan Pemerintah)
 """
 
 def main():
@@ -41,10 +44,11 @@ def main():
         st.subheader("Home")
         st.markdown(desc_temp, unsafe_allow_html=True)
     elif choice == "Aplikasi":
+        st.markdown(desc_temp2, unsafe_allow_html=True)
         run_ml_app()
 
 def run_ml_app():
-    st.subheader("Aplikasi Klasifikasi Kredit Nasabah")
+    st.subheader("Mulai Prediksi!")
     
     # Create a two-column layout
     left, right = st.columns([1, 1])
