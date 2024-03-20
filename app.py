@@ -30,7 +30,7 @@ desc_temp2 = """
     #### Kolom kelas diisi dengan angka dan pengertiannya sebagai berikut:
     - Angka 1 untuk nasabah yang bekerja di perusahaan PT (Perseroan Terbatas) dan PNS/Bekerja dengan perusahaan pemerintah
     - Angka 2 untuk pemilik toko/usaha
-    - Angka 3 untuk nasabah yang bekerja di angka 1 (PT/PNS/Perusahaan Pemerintah)
+    - Angka 3 untuk nasabah yang tidak bekerja di angka 1 (PT/PNS/Perusahaan Pemerintah)
 """
 
 def main():
@@ -38,8 +38,7 @@ def main():
     """
 <style>
 .sidebar .sidebar-content {
-    background-image: linear-gradient(#2e7bcf,#2e7bcf);
-    color: blue;
+    background-color: blue;
 }
 </style>
 """,
